@@ -12,6 +12,7 @@
 		630A06442125442100A2DAA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630A06422125442100A2DAA8 /* Main.storyboard */; };
 		630A06462125442300A2DAA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630A06452125442300A2DAA8 /* Assets.xcassets */; };
 		630A06492125442300A2DAA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630A06472125442300A2DAA8 /* LaunchScreen.storyboard */; };
+		630A065A2125592F00A2DAA8 /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630A06592125592F00A2DAA8 /* CommonClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		630A06452125442300A2DAA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		630A06482125442300A2DAA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630A064A2125442300A2DAA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		630A06592125592F00A2DAA8 /* CommonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,38 @@
 			isa = PBXGroup;
 			children = (
 				630A063E2125442100A2DAA8 /* AppDelegate.swift */,
-				630A06402125442100A2DAA8 /* ViewController.swift */,
-				630A06422125442100A2DAA8 /* Main.storyboard */,
+				630A0650212555B600A2DAA8 /* PickImage */,
+				630A0656212558CE00A2DAA8 /* CommonClass */,
+				630A0651212555CD00A2DAA8 /* StoryBoards */,
 				630A06452125442300A2DAA8 /* Assets.xcassets */,
 				630A06472125442300A2DAA8 /* LaunchScreen.storyboard */,
 				630A064A2125442300A2DAA8 /* Info.plist */,
 			);
 			path = PhotoEffects;
+			sourceTree = "<group>";
+		};
+		630A0650212555B600A2DAA8 /* PickImage */ = {
+			isa = PBXGroup;
+			children = (
+				630A06402125442100A2DAA8 /* ViewController.swift */,
+			);
+			path = PickImage;
+			sourceTree = "<group>";
+		};
+		630A0651212555CD00A2DAA8 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				630A06422125442100A2DAA8 /* Main.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		630A0656212558CE00A2DAA8 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				630A06592125592F00A2DAA8 /* CommonClass.swift */,
+			);
+			path = CommonClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			files = (
 				630A06412125442100A2DAA8 /* ViewController.swift in Sources */,
 				630A063F2125442100A2DAA8 /* AppDelegate.swift in Sources */,
+				630A065A2125592F00A2DAA8 /* CommonClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UW77XW3YVV;
 				INFOPLIST_FILE = PhotoEffects/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UW77XW3YVV;
 				INFOPLIST_FILE = PhotoEffects/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
